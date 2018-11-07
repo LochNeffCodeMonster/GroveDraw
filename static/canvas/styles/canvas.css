@@ -1,0 +1,93 @@
+#outer-wrapper {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 40px;
+    background-image:
+            radial-gradient(at 0% top,
+                    hsla(200, 70%, 85%, 1),
+                    hsla(200, 40%, 85%, 1)
+            );
+}
+.canvas-container {
+    margin: 20px auto 0px auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+#divider {
+    background-color: hsla(200, 35%, 85%, 1);
+    height: 100%;
+    margin-top: 10px;
+}
+#prompt {
+    position: relative;
+    top: 10px;
+    text-align: center;
+}
+#prompt-text {
+    font-size: 20px;
+}
+#menu-box {
+    display: inline-flex;
+    position: fixed;
+    left: 35%;
+}
+#atom-box {
+    max-width: 280px;
+    flex-wrap: wrap;
+    display: inline-flex;
+}
+#detail-box {
+    max-width: 120px;
+    flex-wrap: wrap;
+    display: inline-flex;
+}
+.atom {
+    text-align: center;
+    border: solid 1px gray;
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+    margin: 1px;
+    padding: 10px;
+    cursor: pointer;
+ }
+
+.detail {
+    text-align: center;
+    border: solid 1px gray;
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+    margin: 1px;
+    padding: 10px;
+    cursor: pointer;
+}
+.atom:hover{
+    background-color: white;
+}
+.atom:active {
+    border: solid 1px red;
+    box-shadow: 0 1px 0 #00823F;
+    bottom: -4px;
+}
+.detail:hover {
+    background-color: white;
+}
+.detail:active {
+    box-shadow: 0 1px 0 #00823F;
+    bottom: -4px;
+}
+
+#submit-box {
+    top: 50%;
+    left: 250%;
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+

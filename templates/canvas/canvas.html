@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static "canvas/styles/canvas.css" %}" type="text/css">
+    <script src="{% static "canvas/scripts/jquery-3.2.1.min.js" %}"></script>
+    <script src="{% static "canvas/scripts/fabric.js" %}"></script>
+    <title>GroveDraw</title>
+</head>
+<body>
+<div id="outer-wrapper">
+    <button type="button" id="whole_canvas">Canvas JSON</button>
+    <div id="prompt"><a id="prompt-text">(molecular formula here)</a></div>
+    <div id="wrapper">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div id="divider">
+        <div id="menu-box">
+            <div id="atom-box">
+                <div id="carbon" class="atom"><img src="{% static "canvas/imgs/Carbon.png" %}"></div>
+                <div id="hydrogen" class="atom"><img src="{% static "canvas/imgs/Hydrogen.png" %}"></div>
+                <div id="oxygen" class="atom"><img src="{% static "canvas/imgs/Oxygen.png" %}"></div>
+                <div id="nitrogen" class="atom"><img src="{% static "canvas/imgs/Nitrogen.png" %}"></div>
+                <div id="sulfur" class="atom"><img src="{% static "canvas/imgs/Sulfur.png" %}"></div>
+                <div id="phosphorous" class="atom"><img src="{% static "canvas/imgs/Phosphorous.png" %}"></div>
+                <div id="aluminum" class="atom"><img src="{% static "canvas/imgs/Aluminum.png" %}"></div>
+                <div id="fluorine" class="atom"><img src="{% static "canvas/imgs/Fluorine.png" %}"></div>
+                <div id="chlorine" class="atom"><img src="{% static "canvas/imgs/Chlorine.png" %}"></div>
+                <div id="bromine" class="atom"><img src="{% static "canvas/imgs/Bromine.png" %}"></div>
+                <div id="iodine" class="atom"><img src="{% static "canvas/imgs/Iodine.png" %}"></div>
+                <div id="selenium" class="atom"><img src="{% static "canvas/imgs/Selenium.png" %}"></div>
+                <div id="antimony" class="atom"><img src="{% static "canvas/imgs/Antimony.png" %}"></div>
+                <div id="xenon" class="atom"><img src="{% static "canvas/imgs/Xenon.png" %}"></div>
+                <script>
+                    var carbon_img = "{% static "canvas/imgs/Carbon.png" %}";
+                    var hydrogen_img = "{% static "canvas/imgs/Hydrogen.png" %}";
+                    var oxygen_img = "{% static "canvas/imgs/Oxygen.png" %}";
+                    var nitrogen_img = "{% static "canvas/imgs/Nitrogen.png" %}";
+                    var sulfur_img = "{% static "canvas/imgs/Sulfur.png" %}";
+                    var phosphorous_img = "{% static "canvas/imgs/Phosphorous.png" %}";
+                    var aluminum_img = "{% static "canvas/imgs/Aluminum.png" %}";
+                    var fluorine_img = "{% static "canvas/imgs/Fluorine.png" %}";
+                    var chlorine_img = "{% static "canvas/imgs/Chlorine.png" %}";
+                    var bromine_img = "{% static "canvas/imgs/Bromine.png" %}";
+                    var iodine_img = "{% static "canvas/imgs/Iodine.png" %}";
+                    var selenium_img = "{% static "canvas/imgs/Selenium.png" %}";
+                    var antimony_img = "{% static "canvas/imgs/Antimony.png" %}";
+                    var xenon_img = "{% static "canvas/imgs/Xenon.png" %}";
+                </script>
+            </div>
+            <div id="detail-box">
+                <div id="electron" class="detail"><img src="{% static "canvas/imgs/Electrons.png" %}"></div>
+                <div id="radical" class="detail"><img src="{% static "canvas/imgs/Radical.png" %}"></div>
+                <div id="bond" class="detail"><img src="{% static "canvas/imgs/Bond.png" %}"></div>
+                <div id="negative" class="detail"><img src="{% static "canvas/imgs/Negative.png" %}"></div>
+                <div id="positive" class="detail"><img src="{% static "canvas/imgs/Positive.png" %}"></div>
+                <div id="delete" class="detail"><img src="{% static "canvas/imgs/Delete.png" %}"></div>
+            </div>
+            <form action="">
+                <div id="submit-box">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script src="{% static "canvas/scripts/classes.js" %}"></script>
+<script src="{% static "canvas/scripts/grovedraw.js" %}"></script>
+</html>
